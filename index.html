@@ -427,7 +427,11 @@
         .blok-1 {
             position: relative;
             padding-bottom: 20px;
-            /*padding-top: 600px;*/
+            padding-top: 480px!important;
+
+            @media screen and (max-w550idth: 475px){
+                padding-top: 480px!important;
+            }
         }
 
         .blok-1 .mainfirstfon {
@@ -458,13 +462,14 @@
 
         .blok-1-main-img {
             position: absolute;
-            top: 70px;
+            top: 20px;
             width: 100%;
-            height: calc(433px * 0.9);
+            height: 433px;
             background-image: url(images/main-people-1.png) !important;
             background-repeat: no-repeat;
             background-position: center;
-            background-size: 100%;
+            background-size: 100% contain;
+            scale: 1.1;
         }
 
         .blok-1-main-img::after {
